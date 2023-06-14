@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemFormController">
+   <children>
+      <TextField fx:id="taskField" focusTraversable="false" layoutX="233.0" layoutY="106.0" prefHeight="61.0" prefWidth="333.0" promptText="Zadanie do wykonania" style="-fx-background-color: #585a66; -fx-text-fill: #ffffff;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="descriptionField" focusTraversable="false" layoutX="233.0" layoutY="187.0" prefHeight="62.0" prefWidth="334.0" promptText="Opis" style="-fx-background-color: #585a66; -fx-text-fill: #ffffff;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveTaskButton" layoutX="337.0" layoutY="280.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #4054e8;" text="ZAPISZ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="288.0" layoutY="32.0" text="Dodaj nowe zadanie" textFill="#4054e8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backButton" fitHeight="41.0" fitWidth="41.0" layoutX="745.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/icon_back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
